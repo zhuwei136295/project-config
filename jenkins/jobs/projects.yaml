@@ -1,13 +1,7 @@
 - project:
-    name: sandbox
-    github-org: openstack-dev
+    name: saturn
     node: master
-    vendor: myvendor
 
     jobs:
-        - noop-check-communication:
-            node: 'd-p-c'
-        - dsvm-tempest-full:
-            node: 'devstack_slave || devstack-precise-check || d-p-c'
-        - dsvm-tempest-my-cinder-driver:
-            node: 'd-p-c'
+        - gerrit-test:
+            node: 'test-1'
