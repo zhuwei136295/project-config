@@ -51,17 +51,19 @@ pipelines:
       current-patchset: True
       approval:
         - verified: [1, 2]
-          username: paasci
+          username: zhuwei10036295
         - Code-Review: 2
+          username: zhuwei10036295
     trigger:
       gerrit:
         - event: comment-added
           approval:
             - Code-Review: 2
+          username: zhuwei10036295
         - event: comment-added
           approval:
             - verified: 1
-          username: paasci
+          username: zhuwei10036295
     start:
       gerrit:
         verified: 0
