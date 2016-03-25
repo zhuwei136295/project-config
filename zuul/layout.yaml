@@ -52,12 +52,12 @@ pipelines:
       approval:
         - verified: [1, 2]
           username: paasci
-        - Code-Review: 2
+        - code-review: 2
     trigger:
       gerrit:
         - event: comment-added
           approval:
-            - Code-Review: 2
+            - code-review: 2
         - event: comment-added
           approval:
             - verified: 1
