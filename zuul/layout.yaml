@@ -51,17 +51,17 @@ pipelines:
       current-patchset: True
       approval:
         - verified: [1, 2]
-          username: jenkins
-        - workflow: 1
+          username: paasci
+        - Code-Review: 2
     trigger:
       gerrit:
         - event: comment-added
           approval:
-            - workflow: 1
+            - Code-Review: 2
         - event: comment-added
           approval:
             - verified: 1
-          username: jenkins
+          username: paasci
     start:
       gerrit:
         verified: 0
