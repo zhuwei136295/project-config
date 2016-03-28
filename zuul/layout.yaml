@@ -67,7 +67,7 @@ pipelines:
         verified: 0
     success:
       gerrit:
-        verified: 1
+        verified: 2
         submit: true
     failure:
       gerrit:
