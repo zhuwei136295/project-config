@@ -3,5 +3,5 @@
     node: master
 
     jobs:
-        - gerrit-test:
+        - saturn-test:
             node: 'test-1'
