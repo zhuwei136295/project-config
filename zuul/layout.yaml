@@ -112,12 +112,12 @@ projects:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
       - saturn-test
-  - name: tcfs/dates
+  - name: tcfs/3rdparty
     check:
       # Remove this after successfully verifying communication with upstream
       # and seeing a posted successful review.
-      - dates-test
+      - 3rdparty-test
     gate:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
-      - dates-test
+      - 3rdparty-test
