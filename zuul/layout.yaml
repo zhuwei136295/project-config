@@ -107,17 +107,71 @@ projects:
     check:
       # Remove this after successfully verifying communication with upstream
       # and seeing a posted successful review.
-      - saturn-test
+      - saturn-utest
     gate:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
-      - saturn-test
+      - saturn-utest
   - name: tcfs/3rdparty
     check:
       # Remove this after successfully verifying communication with upstream
       # and seeing a posted successful review.
-      - 3rdparty-test
+      - 3rdparty-utest
     gate:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
-      - 3rdparty-test
+      - 3rdparty-utest
+  - name: tcfs/infra
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - infra-utest
+    gate:
+      # Uncomment this job when you have a jenkins slave running and want to
+      # test a full Tempest run within devstack.
+      - infra-utest  - name: tcfs/common
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - common-utest
+    gate:
+      # Uncomment this job when you have a jenkins slave running and want to
+      # test a full Tempest run within devstack.
+      - common-utest
+  - name: tcfs/vdbs
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - vdbs-utest
+    gate:
+      # Uncomment this job when you have a jenkins slave running and want to
+      # test a full Tempest run within devstack.
+      - vdbs-utest
+  - name: tcfs/pub-sub
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - pubsub-utest
+    gate:
+      # Uncomment this job when you have a jenkins slave running and want to
+      # test a full Tempest run within devstack.
+      - pubsub-utest
+  - name: tcfs/dates
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - dates-faketest
+    gate:
+      # Uncomment this job when you have a jenkins slave running and want to
+      # test a full Tempest run within devstack.
+      - dates-faketest
+  - name: tcfs/tcfs
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - tcfs-verify
+    gate:
+      # Uncomment this job when you have a jenkins slave running and want to
+      # test a full Tempest run within devstack.
+      - tcfs-verify
+
