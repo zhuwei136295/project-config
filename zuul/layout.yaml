@@ -175,4 +175,3 @@ projects:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
       - tcfs-verify
-
